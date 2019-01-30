@@ -1,0 +1,143 @@
+
+@import "customVariables";
+@import "style";
+@import "subpages";
+
+.spotBtn{
+    background:#003062;
+}
+
+.spotItemSet{
+    .reportTitle{    
+       color: $secondary-accent;
+    }
+
+    > .row > .col-auto{
+        padding-right: 0;
+    }
+}
+
+.dateContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: .5rem;
+}
+
+.allDateContainer{
+    background:#003976;   
+}
+
+.regionDateContainer{
+    background:#005fc4;
+}
+
+.allDateContainer > span:first-of-type{
+    font-size: 1.45rem;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.allDateContainer > span:last-of-type{
+    font-size: 1.25rem;
+    line-height: normal;
+}
+
+.regionDateContainer > span:first-of-type{
+    font-size: 1.25rem;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.regionDateContainer > span:last-of-type{
+    font-size: 1.125rem;
+    line-height: normal;
+}
+
+.columnSummary{
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.contactInfo{
+    margin-bottom: .5rem;
+}
+
+a.readMore{
+
+    &:hover{
+        text-decoration: none;
+    }
+
+    > i{
+        padding-left: 10px;
+        padding-top: 3px;
+    }
+}
+
+.regionBtn-Header{
+    text-align: center;
+}
+
+.regionBtn{
+    font-size: 1.25rem;
+    padding: 0;
+}
+
+.regionBtn .fas{
+    transition: .4s transform ease-in-out;
+}
+
+.regionBtn.collapsed .fas{
+    transform: rotate(180deg);
+}
+
+#regionReports .spotItemSet{
+    border-bottom: 1px solid #6c757d;
+    margin-bottom: 1.5rem;
+
+    &:last-of-type{
+        margin-bottom: 1.25rem;
+        border-bottom: none;
+    }
+}
+
+@media(min-width:768px){
+    .spotItemSet > .row > .col-auto{
+        padding-right: 15px;
+    }
+
+    .newSpotBtn{
+        font-size:1.25rem;
+    }
+
+    .allDateContainer > span:first-of-type{
+        font-size: 1.25rem;
+        line-height: 1;
+        margin-bottom: 10px;
+    }
+
+    .allDateContainer > span:last-of-type{
+        font-size: 1.125rem;
+    }
+
+    .regionDateContainer > span:first-of-type{
+        font-size: 1rem;
+    }
+
+    .regionDateContainer > span:last-of-type{
+        font-size: 1rem;
+    }
+
+    #regionReports .spotItemSet{
+        &:last-of-type{
+            margin-bottom: 0;
+            padding-bottom: 0rem !important;
+        }
+    }
+}

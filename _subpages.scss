@@ -1,0 +1,143 @@
+@import "customVariables";
+@import "style";
+
+body{
+    background: $white;
+}
+
+h6{
+    font-size: $font-size-h6;
+}
+
+nav{
+    background: $black;
+}
+
+header{
+    padding-top: 0;
+    background: $black;
+
+    #introRow{
+        > div{
+            &:first-of-type{
+                margin-left: 2rem;
+            }
+            &:last-of-type{
+                margin-right: 2rem;
+            }
+        }
+
+        #introTitle{
+            color: $white;
+            margin-top: 1.5rem;
+            font-size: 3rem;
+            font-weight: 400;
+        }
+    }
+
+    .sampleHeader{
+        font-weight: 300;
+        color:$white;
+    }
+
+    .moveDownIcon{
+        color: $white;
+        margin-top: 3rem;
+        margin-left: -2rem;
+    }
+
+    /*Card*/
+    .sampleOverview{
+        color: $white;
+        background: $accent-color;
+        padding: 1.25rem 1.5rem;
+        border-radius: .5rem;
+
+        .overview{
+            font-size: 1.5rem;
+            line-height: 3rem;
+
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    #projectRow{
+        color: $white;
+        align-items: center;
+        height:90vh;
+
+        > div{
+            &:first-of-type{
+                margin-left: 2rem;
+            }
+            &:last-of-type{
+                margin-right: 2rem;
+            }
+        }
+
+        #projectTitle{
+            font-weight: 300;
+            font-size: 3rem;
+            line-height: 4.5rem;
+        }
+
+    }
+    
+    .sampleOverview{
+        padding: 2rem;
+
+        .sampleHeader{
+            font-weight: 400;
+        }
+
+        .projectsOverview{
+            font-size: 1.4rem;
+        }
+
+        ul{
+            padding-left:0;
+        }
+
+        .projectItem{
+            text-align: center;
+            padding: 0;
+            margin-bottom: 1.5rem;
+            list-style-type: none;
+
+            &:first-of-type{
+                margin-top: 1.75rem;
+            }
+
+            &:last-of-type{
+                margin-bottom: 0;
+            }
+
+            .projectLink{
+                font-size: 1.25rem;
+                padding-bottom: .75rem;
+
+                &:hover{
+                    text-decoration: none;
+                    border-bottom: 2px solid $black;
+                }
+            }
+        }
+    }
+}
+
+@media(min-width: 992px){
+    header{        
+        #projectRow{
+             .sampleOverview{
+
+                .projectItem:first-of-type, .projectItem:last-of-type{
+                    margin-top: 1.25rem;
+                    margin-bottom: 0;
+                    list-style-type: none;
+                }
+             }
+        }
+    }
+}

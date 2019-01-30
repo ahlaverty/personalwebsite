@@ -1,0 +1,175 @@
+@import "customVariables";
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-family: $main-font;
+	font-weight: 300;
+	background: $black;
+}
+
+a{
+	color:$main-color;
+}
+
+.hide{
+	display: none;
+}
+
+.full-viewport{
+	height: $full-viewport;
+}
+
+nav.navbar{
+	height:10vh;
+	background: $black;
+	font-weight: 300;
+
+	.nav-item{
+		margin:0 2rem;
+		border-bottom: $link-border;
+
+		&:hover{
+			border-bottom: $link-border-hover;
+		}
+	}
+
+	/*top link*/
+	.nav-link{
+		color:$white;
+		padding:.75rem 1.5rem;
+
+	}
+
+}
+
+header{
+	height:$main-viewport;
+}
+
+
+#introRow{
+	height:100%;
+	align-items:center;
+	
+	#introTitle{
+		color:$accent-color;
+		margin-bottom: 2rem;
+		font-weight: 300;
+		font-size: 5rem;
+	}
+}
+
+.subheader{
+	font-size: 1.5rem;
+	font-weight: 300;
+	color:$white;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.section{
+	transition: all 50s ease;
+	padding:30px;
+	
+	&:nth-child(1), &:nth-child(4){
+		background: $white;
+	}
+
+	&:nth-child(3) h2{
+		color:$white;
+	}
+
+	&:nth-child(2), &:nth-child(5){
+		color:$white;
+		background: $accent-color;
+	}
+
+	.section-header{
+		margin-bottom: 1rem;
+		font-weight: 400;
+	}
+
+	#biopic{
+		border-radius: 50%;
+		margin: 1rem 0;
+	}
+
+	.about{
+		font-size: 1.75rem;
+		line-height: 3rem;
+	}
+
+	/*in section */
+	.position .jobtitle:last-of-type{
+		margin-bottom: 1.25rem;
+	}
+
+	/*in section*/
+	.company{
+		font-weight: 500;
+	}
+
+	/*in section */
+	.jobtitle{
+		font-weight: 300;
+		margin-bottom: .25rem;
+	}
+
+	.intro{
+		font-size: 1.3rem;
+	}
+
+	.portLinks{
+		padding-bottom: 1rem;
+		font-weight: 300;
+
+		&:hover{
+			border-bottom: $link-border-hover;
+			color:$white;
+			text-decoration: none;
+		}
+	}
+
+	.white-card{
+		border: 1px solid $accent-color;
+	}
+
+	#umdc-logo{
+		width:110px;
+		margin:1.25rem 0 0 1.25rem;
+		}
+
+	#mercy-logo{
+		width:150px;
+		margin:1.25rem 0 0 1.25rem;
+	}
+
+	#um-card-body{
+		}
+
+	.vol-title{
+		font-weight: 600;
+		margin-bottom: 1rem;
+	}
+
+	#linkedin{
+		max-width: 90px;
+	}
+
+}
+
+@media(min-width: 576px){
+	 #navbarNav{
+	 	justify-content: space-around;
+	 }
+}
+
+@media(min-width: 768px){
+
+	#introTitle{
+		font-size: 5rem;
+	}
+}

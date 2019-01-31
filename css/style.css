@@ -42,15 +42,21 @@ nav.navbar {
   nav.navbar #navbarNav {
     background: #1555bc; }
   nav.navbar .navbar-nav {
-    margin: .75rem; }
+    margin-top: 0; }
   nav.navbar .nav-item {
-    margin: 0 .75rem;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
     border-bottom: 2px solid transparent; }
-    nav.navbar .nav-item:hover {
-      border-bottom: 2px solid #000000; }
+    nav.navbar .nav-item:first-of-type {
+      margin-top: 1rem; }
+    nav.navbar .nav-item:last-of-type {
+      margin-bottom: 1rem; }
   nav.navbar .nav-link {
+    display: inline;
     color: #ffffff;
     padding: .75rem 0rem; }
+    nav.navbar .nav-link:hover {
+      border-bottom: 2px solid #000000; }
 
 header {
   height: 80vh; }
@@ -163,11 +169,15 @@ header {
       font-size: 1.25rem;
       line-height: 3rem; } }
 @media (min-width: 768px) {
+  nav.navbar #navbarNav {
+    background: none; }
   nav.navbar .nav-item {
-    margin: 0 2rem;
+    margin: 0 1.5rem;
     border-bottom: 2px solid transparent; }
     nav.navbar .nav-item:hover {
       border-bottom: 2px solid #1e7ce6; }
+  nav.navbar .navbar-nav {
+    margin-top: 1rem; }
 
   #introRow #introTitle {
     font-size: 5rem;
@@ -201,8 +211,8 @@ header {
     .section .vol-title {
       font-weight: 600; } }
 @media (min-width: 992px) {
-  nav.navbar #navbarNav {
-    background: none; }
+  nav.navbar .nav-item {
+    margin: 0 2rem; }
 
   .section #biopic {
     margin: 0; } }

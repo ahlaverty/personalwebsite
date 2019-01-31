@@ -58,23 +58,32 @@ nav.navbar{
 	}
 
 	.navbar-nav{
-		margin: .75rem;
+		margin-top: 0;
 	}
 
 	.nav-item{
-		margin:0 .75rem;
+		margin-left: 1.5rem;
+		margin-bottom: 1.5rem;
 		border-bottom: $link-border;
 
-		&:hover{
-			border-bottom: 2px solid $black;
+		&:first-of-type{
+			margin-top: 1rem;
+		}
+
+		&:last-of-type{
+			margin-bottom: 1rem;
 		}
 	}
 
 	/*top link*/
 	.nav-link{
+		display: inline;
 		color:$white;
 		padding:.75rem 0rem;
 
+		&:hover{
+			border-bottom: 2px solid $black;
+		}
 	}
 
 }
@@ -281,13 +290,21 @@ header{
 @media(min-width: 768px){
 	nav.navbar{
 
+		#navbarNav{
+			background: none;
+		}
+
 		.nav-item{
-			margin:0 2rem;
+			margin:0 1.5rem;
 			border-bottom: $link-border;
 
 			&:hover{
 				border-bottom: $link-border-hover;
 			}
+		}
+
+		.navbar-nav{
+			margin-top: 1rem;
 		}
 	}
 
@@ -353,9 +370,10 @@ header{
 }
 
 @media(min-width: 992px){
+
 	nav.navbar{
-		#navbarNav{
-			background: none;
+		.nav-item{
+			margin:0 2rem;
 		}
 	}
 

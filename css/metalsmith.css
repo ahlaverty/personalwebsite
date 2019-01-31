@@ -20,7 +20,8 @@ a {
   background: #1555bc;
   width: auto;
   height: auto;
-  padding: .75rem 1.25rem; }
+  padding: .75rem 1.25rem;
+  margin-top: .5rem; }
   .navbar-toggler:focus {
     outline: none; }
   .navbar-toggler:not(.collapsed) {
@@ -68,10 +69,7 @@ header {
 
 .section {
   transition: all 50s ease;
-  padding: 30px;
-  /*in section */
-  /*in section*/
-  /*in section */ }
+  padding: 30px; }
   .section:nth-child(1), .section:nth-child(4) {
     background: #ffffff; }
   .section:nth-child(3) h2 {
@@ -80,43 +78,67 @@ header {
     color: #ffffff;
     background: #1555bc; }
   .section .section-header {
-    margin-bottom: 1rem;
-    font-weight: 400; }
-  .section #biopic {
-    border-radius: 50%;
-    margin: 1rem 0; }
-  .section .about {
-    font-size: 1.75rem;
-    line-height: 3rem; }
-  .section .position .jobtitle:last-of-type {
-    margin-bottom: 1.25rem; }
-  .section .company {
-    font-weight: 500; }
-  .section .jobtitle {
-    font-weight: 300;
-    margin-bottom: .25rem; }
-  .section .intro {
+    margin-bottom: .75rem;
+    font-weight: 400;
     font-size: 1.3rem; }
+  .section #biopic {
+    display: block;
+    border-radius: 50%;
+    margin: 1rem auto; }
+  .section .about {
+    font-size: 1.25rem;
+    line-height: 2.5rem; }
+  .section #jobRow {
+    /*in section*/
+    /*in section */ }
+    .section #jobRow .jobCol:first-of-type .position:first-of-type .company {
+      margin-top: .5rem; }
+    .section #jobRow .company {
+      font-weight: 500; }
+    .section #jobRow .jobtitle {
+      font-weight: 300;
+      margin-bottom: .25rem; }
+      .section #jobRow .jobtitle:last-of-type {
+        margin-bottom: 1.25rem; }
+  .section .intro {
+    font-size: 1.125rem;
+    line-height: 2.5rem; }
   .section .portLinks {
-    padding-bottom: 1rem;
-    font-weight: 300; }
-    .section .portLinks:hover {
-      border-bottom: 2px solid #1e7ce6;
-      color: #ffffff;
+    margin-top: 1rem;
+    font-weight: 300;
+    border-bottom: 2px solid transparent; }
+    .section .portLinks .portUrl {
       text-decoration: none; }
-  .section .white-card {
-    border: 1px solid #1555bc; }
+      .section .portLinks .portUrl:hover {
+        padding-bottom: 1rem;
+        border-bottom: 2px solid #1e7ce6;
+        color: #ffffff; }
+  .section .philCol {
+    align-items: stretch; }
+    .section .philCol:last-of-type .white-card {
+      margin-bottom: 0; }
+    .section .philCol .white-card {
+      border: 1px solid #1555bc;
+      margin-bottom: 2rem;
+      height: 100%; }
+      .section .philCol .white-card .card-text {
+        flex: 1 0 auto; }
+  .section .philLogo {
+    margin: 1.5rem auto .5rem auto; }
   .section #umdc-logo {
-    width: 110px;
-    margin: 1.25rem 0 0 1.25rem; }
+    width: 110px; }
   .section #mercy-logo {
-    width: 150px;
-    margin: 1.25rem 0 0 1.25rem; }
+    width: 150px; }
   .section .vol-title {
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 1rem; }
+  .section #linkedInBtn {
+    margin: 1.25rem 0;
+    padding: .75rem; }
   .section #linkedin {
     max-width: 90px; }
+  .section .contact {
+    font-size: 1.25rem; }
 
 @media (min-width: 576px) {
   nav.navbar {
@@ -126,20 +148,57 @@ header {
     justify-content: space-around; }
 
   header {
-    height: 90vh; } }
+    height: 90vh; }
+
+  #introRow #introTitle {
+    font-size: 4rem;
+    margin-bottom: 2rem; }
+  #introRow .subheader {
+    font-size: 1.25rem; }
+
+  .section {
+    /*in section */ }
+    .section .position .jobtitle:last-of-type {
+      margin-bottom: 1.5rem; }
+    .section .about {
+      font-size: 1.5rem;
+      line-height: 3rem; } }
 @media (min-width: 768px) {
-  .nav-item {
+  nav.navbar .nav-item {
     margin: 0 2rem;
     border-bottom: 2px solid transparent; }
-    .nav-item:hover {
+    nav.navbar .nav-item:hover {
       border-bottom: 2px solid #1e7ce6; }
 
-  #introTitle {
+  #introRow #introTitle {
     font-size: 5rem;
     margin-bottom: 2rem; }
+  #introRow .subheader {
+    font-size: 1.5rem; }
 
-  .subheader {
-    font-size: 1.5rem; } }
+  .section {
+    /*in section */ }
+    .section .section-header {
+      margin-bottom: 1rem;
+      font-weight: 400; }
+    .section .position .jobtitle:last-of-type {
+      margin-bottom: 1.5rem; }
+    .section .intro {
+      font-size: 1.3rem; }
+    .section .white-card {
+      margin-bottom: 0; }
+    .section .contact {
+      font-size: 1.75rem; }
+    .section #linkedInBtn {
+      margin: 0; }
+    .section .vol-title {
+      font-weight: 600; } }
+@media (min-width: 992px) {
+  nav.navbar #navbarNav {
+    background: none; }
+
+  .section #biopic {
+    margin: 0; } }
 html {
   scroll-behavior: smooth; }
 
@@ -162,7 +221,8 @@ a {
   background: #1555bc;
   width: auto;
   height: auto;
-  padding: .75rem 1.25rem; }
+  padding: .75rem 1.25rem;
+  margin-top: .5rem; }
   .navbar-toggler:focus {
     outline: none; }
   .navbar-toggler:not(.collapsed) {
@@ -210,10 +270,7 @@ header {
 
 .section {
   transition: all 50s ease;
-  padding: 30px;
-  /*in section */
-  /*in section*/
-  /*in section */ }
+  padding: 30px; }
   .section:nth-child(1), .section:nth-child(4) {
     background: #ffffff; }
   .section:nth-child(3) h2 {
@@ -222,43 +279,67 @@ header {
     color: #ffffff;
     background: #1555bc; }
   .section .section-header {
-    margin-bottom: 1rem;
-    font-weight: 400; }
-  .section #biopic {
-    border-radius: 50%;
-    margin: 1rem 0; }
-  .section .about {
-    font-size: 1.75rem;
-    line-height: 3rem; }
-  .section .position .jobtitle:last-of-type {
-    margin-bottom: 1.25rem; }
-  .section .company {
-    font-weight: 500; }
-  .section .jobtitle {
-    font-weight: 300;
-    margin-bottom: .25rem; }
-  .section .intro {
+    margin-bottom: .75rem;
+    font-weight: 400;
     font-size: 1.3rem; }
+  .section #biopic {
+    display: block;
+    border-radius: 50%;
+    margin: 1rem auto; }
+  .section .about {
+    font-size: 1.25rem;
+    line-height: 2.5rem; }
+  .section #jobRow {
+    /*in section*/
+    /*in section */ }
+    .section #jobRow .jobCol:first-of-type .position:first-of-type .company {
+      margin-top: .5rem; }
+    .section #jobRow .company {
+      font-weight: 500; }
+    .section #jobRow .jobtitle {
+      font-weight: 300;
+      margin-bottom: .25rem; }
+      .section #jobRow .jobtitle:last-of-type {
+        margin-bottom: 1.25rem; }
+  .section .intro {
+    font-size: 1.125rem;
+    line-height: 2.5rem; }
   .section .portLinks {
-    padding-bottom: 1rem;
-    font-weight: 300; }
-    .section .portLinks:hover {
-      border-bottom: 2px solid #1e7ce6;
-      color: #ffffff;
+    margin-top: 1rem;
+    font-weight: 300;
+    border-bottom: 2px solid transparent; }
+    .section .portLinks .portUrl {
       text-decoration: none; }
-  .section .white-card {
-    border: 1px solid #1555bc; }
+      .section .portLinks .portUrl:hover {
+        padding-bottom: 1rem;
+        border-bottom: 2px solid #1e7ce6;
+        color: #ffffff; }
+  .section .philCol {
+    align-items: stretch; }
+    .section .philCol:last-of-type .white-card {
+      margin-bottom: 0; }
+    .section .philCol .white-card {
+      border: 1px solid #1555bc;
+      margin-bottom: 2rem;
+      height: 100%; }
+      .section .philCol .white-card .card-text {
+        flex: 1 0 auto; }
+  .section .philLogo {
+    margin: 1.5rem auto .5rem auto; }
   .section #umdc-logo {
-    width: 110px;
-    margin: 1.25rem 0 0 1.25rem; }
+    width: 110px; }
   .section #mercy-logo {
-    width: 150px;
-    margin: 1.25rem 0 0 1.25rem; }
+    width: 150px; }
   .section .vol-title {
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 1rem; }
+  .section #linkedInBtn {
+    margin: 1.25rem 0;
+    padding: .75rem; }
   .section #linkedin {
     max-width: 90px; }
+  .section .contact {
+    font-size: 1.25rem; }
 
 @media (min-width: 576px) {
   nav.navbar {
@@ -268,20 +349,57 @@ header {
     justify-content: space-around; }
 
   header {
-    height: 90vh; } }
+    height: 90vh; }
+
+  #introRow #introTitle {
+    font-size: 4rem;
+    margin-bottom: 2rem; }
+  #introRow .subheader {
+    font-size: 1.25rem; }
+
+  .section {
+    /*in section */ }
+    .section .position .jobtitle:last-of-type {
+      margin-bottom: 1.5rem; }
+    .section .about {
+      font-size: 1.5rem;
+      line-height: 3rem; } }
 @media (min-width: 768px) {
-  .nav-item {
+  nav.navbar .nav-item {
     margin: 0 2rem;
     border-bottom: 2px solid transparent; }
-    .nav-item:hover {
+    nav.navbar .nav-item:hover {
       border-bottom: 2px solid #1e7ce6; }
 
-  #introTitle {
+  #introRow #introTitle {
     font-size: 5rem;
     margin-bottom: 2rem; }
+  #introRow .subheader {
+    font-size: 1.5rem; }
 
-  .subheader {
-    font-size: 1.5rem; } }
+  .section {
+    /*in section */ }
+    .section .section-header {
+      margin-bottom: 1rem;
+      font-weight: 400; }
+    .section .position .jobtitle:last-of-type {
+      margin-bottom: 1.5rem; }
+    .section .intro {
+      font-size: 1.3rem; }
+    .section .white-card {
+      margin-bottom: 0; }
+    .section .contact {
+      font-size: 1.75rem; }
+    .section #linkedInBtn {
+      margin: 0; }
+    .section .vol-title {
+      font-weight: 600; } }
+@media (min-width: 992px) {
+  nav.navbar #navbarNav {
+    background: none; }
+
+  .section #biopic {
+    margin: 0; } }
 body {
   background: #ffffff; }
 

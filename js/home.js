@@ -1,12 +1,19 @@
 $().ready(function(){
 
+	hideNav();
+
 	$(window).resize(function(){
-		if ($(window).width() <= 992){	
-			$(".nav-link").click(function(){
-				
-				$(".navbar-toggler").addClass("collapsed");
-			});
-		}	
+		hideNav();
+
 	});
 		
+	function hideNav(){
+		$(".nav-link").click(function(){
+			if($(window).width() <= 992){
+				
+				$(".navbar-toggler").addClass("collapsed").attr("aria-expanded","false");
+				$(".navbar-collapse").removeClass("show");
+			}
+		});	
+	}
 });

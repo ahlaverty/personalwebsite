@@ -17,19 +17,23 @@ a {
 
 .navbar-toggler {
   outline: none;
-  background: #1555bc;
   width: auto;
   height: auto;
-  padding: .75rem 1.25rem;
+  padding: .75rem 1rem;
   margin-top: .5rem; }
   .navbar-toggler:focus {
     outline: none; }
-  .navbar-toggler:not(.collapsed) {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0; }
   .navbar-toggler .navbar-toggler-icon {
     width: auto;
     height: auto; }
+
+.navbar-collapse {
+  margin-left: -1rem;
+  margin-right: -1rem; }
+
+[aria-expanded="true"] {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0; }
 
 nav.navbar {
   background: #000000;
@@ -80,7 +84,7 @@ header {
   .section .section-header {
     margin-bottom: .75rem;
     font-weight: 400;
-    font-size: 1.3rem; }
+    font-size: 1.75rem; }
   .section #biopic {
     display: block;
     border-radius: 50%;
@@ -113,16 +117,11 @@ header {
         padding-bottom: 1rem;
         border-bottom: 2px solid #1e7ce6;
         color: #ffffff; }
-  .section .philCol {
-    align-items: stretch; }
-    .section .philCol:last-of-type .white-card {
-      margin-bottom: 0; }
-    .section .philCol .white-card {
-      border: 1px solid #1555bc;
-      margin-bottom: 2rem;
-      height: 100%; }
-      .section .philCol .white-card .card-text {
-        flex: 1 0 auto; }
+  .section .philCol .white-card {
+    border: 1px solid #1555bc;
+    margin-bottom: 2rem; }
+  .section .philCol:last-of-type .white-card {
+    margin-bottom: 0; }
   .section .philLogo {
     margin: 1.5rem auto .5rem auto; }
   .section #umdc-logo {
@@ -161,7 +160,7 @@ header {
     .section .position .jobtitle:last-of-type {
       margin-bottom: 1.5rem; }
     .section .about {
-      font-size: 1.5rem;
+      font-size: 1.25rem;
       line-height: 3rem; } }
 @media (min-width: 768px) {
   nav.navbar .nav-item {
@@ -180,13 +179,21 @@ header {
     /*in section */ }
     .section .section-header {
       margin-bottom: 1rem;
-      font-weight: 400; }
-    .section .position .jobtitle:last-of-type {
-      margin-bottom: 1.5rem; }
+      font-weight: 400;
+      font-size: 1.8rem; }
+    .section .about {
+      font-size: 1.4rem; }
+    .section .company {
+      font-size: 1.25rem; }
+    .section .position .jobtitle {
+      font-size: 1.125rem; }
+      .section .position .jobtitle:last-of-type {
+        margin-bottom: 1.5rem; }
     .section .intro {
       font-size: 1.3rem; }
     .section .white-card {
-      margin-bottom: 0; }
+      margin-bottom: 0;
+      height: 100%; }
     .section .contact {
       font-size: 1.75rem; }
     .section #linkedInBtn {

@@ -24,27 +24,29 @@ a{
 
 .navbar-toggler{
 	outline: none;
-	background: $accent-color;
 	width:auto;
 	height:auto;
-	padding: .75rem 1.25rem;
+	padding: .75rem 1rem;
 	margin-top: .5rem;
 
 	&:focus{
 		outline: none;
 	}
 
-	&:not(.collapsed){
-		border-bottom-left-radius: 0;
-		border-bottom-right-radius: 0;
-	}
-
 	.navbar-toggler-icon{
 		width:auto;
 		height:auto;
 	}
+}
 
+.navbar-collapse{
+	margin-left: -1rem;
+	margin-right: -1rem;
+}
 
+[aria-expanded="true"]{
+	border-bottom-left-radius: 0;
+ 	border-bottom-right-radius: 0;
 }
 
 nav.navbar{
@@ -123,7 +125,7 @@ header{
 	.section-header{
 		margin-bottom: .75rem;
 		font-weight: 400;
-		font-size: 1.3rem;
+		font-size: 1.75rem;
 	}
 
 	#biopic{
@@ -184,7 +186,11 @@ header{
 	}
 
 	.philCol{
-		align-items: stretch;
+
+		.white-card{
+			border: 1px solid $accent-color;
+			margin-bottom: 2rem;
+		}
 
 		&:last-of-type{
 			.white-card{
@@ -192,17 +198,6 @@ header{
 			}
 		}
 
-		.white-card{
-			border: 1px solid $accent-color;
-			margin-bottom: 2rem;
-			height:100%;
-
-			.card-text{
-				flex: 1 0 auto;
-			}
-
-			
-		}
 	}
 
 	.philLogo{
@@ -276,7 +271,7 @@ header{
 		}
 
 		.about{
-			font-size: 1.5rem;
+			font-size: 1.25rem;
 			line-height: 3rem;
 		}
 	}
@@ -314,11 +309,24 @@ header{
 		.section-header{
 			margin-bottom: 1rem;
 			font-weight: 400;
+			font-size: 1.8rem;
+		}
+
+		.about{
+			font-size: 1.4rem;
+		}
+
+		.company{
+			font-size: 1.25rem;
 		}
 
 		/*in section */
-		.position .jobtitle:last-of-type{
-			margin-bottom: 1.5rem;
+		.position .jobtitle{
+			font-size: 1.125rem;
+
+			&:last-of-type{
+				margin-bottom: 1.5rem;
+			}
 		}
 
 		.intro{
@@ -327,6 +335,7 @@ header{
 
 		.white-card{
 			margin-bottom: 0;
+			height: 100%;
 		}
 
 		.contact{
@@ -354,5 +363,6 @@ header{
 		#biopic{
 			margin: 0;
 		}
+		
 	}
 }

@@ -1,16 +1,19 @@
 @import "customVariables";
+@import "style";
+@import "subpages";
 
-body{
-  background: #f8fbfc;  
+.taskSample{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fdfaf9;     
 }
 
 #dashboardIcon{
-    margin-top: 2rem;
+    padding-top: 2rem;
 }
 
 @media(min-width: 992px){
     #dashboardIcon{
-        margin-top: 3rem;
+        padding-top: 3rem;
     }
 }
 
@@ -38,12 +41,6 @@ body{
         &:visited{
             color:inherit;
         }
-    }
-}
-
-@media(min-width: 500px){
-    .indicator{
-        font-size:3.125rem;
     }
 }
 
@@ -107,8 +104,10 @@ body{
     color:$white;
     border-radius:100%;
     padding:13px;
+    text-align: center;
+    width: 58px;
+    height: 58px;
 }
-
 
 
 #openCard{
@@ -138,7 +137,6 @@ body{
     #lateIcon{
         color:#dc3545;
         background: $white;
-        width:1em;
     }
 }
 
@@ -158,7 +156,6 @@ body{
     #thisWkIcon{
         color: #ffc107; 
         background: $white;
-        width:1em;
     }
 }
 
@@ -178,7 +175,6 @@ body{
     #nextWkIcon{
         color:#6c757d;
         background: $white;
-        width:1em;
     }
 }
 
@@ -218,7 +214,7 @@ body{
     display:flex;
 }
 
-/* filter */
+/* filter 
 input.daterange{
     font-family:"Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
     min-width:200px;
@@ -251,49 +247,56 @@ button#dateSearchBtn{
 }
 
 .ranges li{
-}
+}*/
 
 
 /*TABLE STARTS*/
 
 
-.table th, .table td{
-    vertical-align: middle;
+.table{
+    th, td{
+        vertical-align: middle;
+    }
+
+    tr{
+        &:nth-child(odd){
+            background: $white;
+        }
+
+        &:nth-child(even){
+            background: #f2f2f2;
+        }
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        &:last-of-type:not(.d-none) td{
+            border-bottom: 1px solid #dee2e6;
+        }
+    }
 }
 
-tr{
-    &:nth-child(odd){
-        background: $white;
-    }
-
-    &:nth-child(even){
-        background: #f2f2f2;
-    }
-
-    &:hover{
-        cursor: pointer;
-    }
+.table-hover tbody tr:hover{
+    background-color: rgba(0,0,0,.3);
 }
 
-
-tr
 .priority{
 
     white-space: nowrap;
-
 }
 
- 
-
 .normalPriority{
-
     color:#e64c00;
-
 }
 
 
 .dueDateContainer{
     max-width: 175px;
+
+    .dueDateIndicator{
+        margin-right: 1rem;
+    }
 }
  
 @media(min-width: 768px){
@@ -330,19 +333,13 @@ tr
     margin-right: 1rem;
 }
 
- 
-
 .percentCompleteContainer{
 
     background-color: #CCD4DC;
-
     width: 140px;
-
     display:inline-block;
-
 }
 
- 
 
 .percentColorBar{
 

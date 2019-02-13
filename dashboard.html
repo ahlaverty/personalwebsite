@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=PRoboto+Condensed:300|Roboto:300,400,500" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/spotPage.css">
+    <link rel="stylesheet" href="css/dashboard.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg">
@@ -41,168 +41,171 @@
         <div class="row" id="introRow">
             <div class="col-4">
                 <h3 class="sampleHeader">2018<span>&#160;&#160;&#160;&#160;</span><span>&#124;</span><span>&#160;&#160;&#160;&#160;</span>ActioNet</h3>
-                <h1 id="introTitle" class="text-left">Regional Reports</h1>
+                <h1 id="introTitle" class="text-left">CTO Task Dashboard</h1>
                 <div class="text-center">
-                    <a href="#regionReportSample"><i class="fas fa-chevron-circle-down moveDownIcon fa-2x"></i></a>
+                    <a href="#dashboardIcon"><i class="fas fa-chevron-circle-down moveDownIcon fa-2x"></i></a>
                 </div>
             </div>
             <div class="col">
                 <div class="sampleOverview">
-                    <p class="overview">The Regional Reports sample below is similar to a project Aubrey did while working for ActioNet. The client needed to see a feed of recently submitted reports, both for all regions and grouped by region.</p>
-                    <p class="overview">They also wanted to be able to search through all submitted reports and have a dashboard for the employees who needed to approve the reports for dissemination.</p>
+                    <p class="overview">The CTO Task Dashboard showed an easy quick glance at the number of tasks that were open, late, due this week, due next week, and closed.</p>
+                    <p class="overview">It also gave them the opportunit to drill down into tasks by status by click the respective card.</p>
                 </div>
             </div>
         </div>  
     </header>
-    <div id='dashboardIcon' class='container-fluid mb-1 mb-md-3 mb-lg-4'>
-        <div class='row'>
-            <div class='col-12'>
-                <div class='card-deck'>
-                        <!-- OPEN TASK CARD-->
-                        <div class="col-6 col-md col-lg">
-                            <a id='openCard' class='card branchCard'>
-                                <div class='card-body'>
-                                    <div class='taskOpen d-flex justify-content-between align-items-center'>
-                                        <i id='openIcon' class='fas fa-list-ul fa-3x indicator'></i>
-                                        <div class='numbers'>3</div>
+    <div class="taskSample pb-5">
+        <div id="dashboardIcon" class="container-fluid mb-1 mb-md-3 mb-lg-4">
+            <div class="row">
+                <div class="col-12">
+                    <div class="card-deck">
+                            <!-- OPEN TASK CARD-->
+                            <div class="col-6 col-md col-lg">
+                                <a id="openCard" class="card branchCard">
+                                    <div class="card-body">
+                                        <div class="taskOpen d-flex justify-content-between align-items-center">
+                                            <i id="openIcon" class="fas fa-list-ul fa-2x indicator"></i>
+                                            <div class="numbers">3</div>
+                                        </div>
+                                        <div class="d-flex cardType">Open</div>
                                     </div>
-                                    <div class="d-flex cardType">Open</div>
-                                </div>
-                            </a>
-                        </div>
-                        <!--LATE TASK CARD-->
-                        <div class="col-6 col-md col-lg">
-                            <a id='lateCard' class='card branchCard lateCard-off'>
-                                <div class='card-body'>
-                                    <div class='taskLate d-flex justify-content-between align-items-center'>
-                                        <i id='lateIcon' class='fas fa-exclamation fa-3x indicator'></i>
-                                        <div class='numbers'>1</div>
+                                </a>
+                            </div>
+                            <!--LATE TASK CARD-->
+                            <div class="col-6 col-md col-lg">
+                                <a id="lateCard" class="card branchCard lateCard-off">
+                                    <div class="card-body">
+                                        <div class="taskLate d-flex justify-content-between align-items-center">
+                                            <i id="lateIcon" class="fas fa-exclamation fa-2x indicator"></i>
+                                            <div class="numbers">1</div>
+                                        </div>
+                                        <div class="d-flex cardType">Late</div>
                                     </div>
-                                    <div class="d-flex cardType">Late</div>
-                                </div>
-                            </a>
-                        </div>
-                        <!--this week card-->
-                        <div class="col-6 col-md col-lg">
-                            <a id='thisWeekCard' class='card branchCard thisWkCard-off'>
-                                <div class='card-body'>
-                                    <div class='taskLate d-flex justify-content-between align-items-center'>
-                                        <i id='thisWkIcon' class='fas fa-thumbtack fa-3x indicator'></i>
-                                        <div class='numbers'>2</div>
+                                </a>
+                            </div>
+                            <!--this week card-->
+                            <div class="col-6 col-md col-lg">
+                                <a id="thisWeekCard" class="card branchCard thisWkCard-off">
+                                    <div class="card-body">
+                                        <div class="taskLate d-flex justify-content-between align-items-center">
+                                            <i id="thisWkIcon" class="fas fa-thumbtack fa-2x indicator"></i>
+                                            <div class="numbers">2</div>
+                                        </div>
+                                        <div class="d-flex cardType">Due this Week</div>
                                     </div>
-                                    <div class="d-flex cardType">Due this Week</div>
-                                </div>
-                            </a>
-                        </div>
-                        <!--next week card-->
-                        <div class="col-6 col-md-6 col-lg">
-                            <a id='nextWeekCard' class='card branchCard nextWkCard-off'>
-                                <div class='card-body'>
-                                    <div class='taskComp d-flex justify-content-between align-items-center'>
-                                        <i id='nextWkIcon' class='fas fa-calendar-alt fa-3x indicator'></i>
-                                        <div class='numbers'>2</div>
+                                </a>
+                            </div>
+                            <!--next week card-->
+                            <div class="col-6 col-md-6 col-lg">
+                                <a id="nextWeekCard" class="card branchCard nextWkCard-off">
+                                    <div class="card-body">
+                                        <div class="taskComp d-flex justify-content-between align-items-center">
+                                            <i id="nextWkIcon" class="fas fa-calendar-alt fa-2x indicator"></i>
+                                            <div class="numbers">2</div>
+                                        </div>
+                                        <div class="d-flex cardType">Due next Week</div>
                                     </div>
-                                    <div class="d-flex cardType">Due next Week</div>
-                                </div>
-                            </a>
-                        </div>
-                        <!--closed-->
-                        <div class="col-6 col-md-6 centerAuto col-lg">
-                            <a id='closedCard' class='card branchCard closedCard-off'>
-                                <div class='card-body'>
-                                    <div class='taskClosed d-flex justify-content-between align-items-center'>
-                                        <i id='closedIcon' class='fas fa-check fa-3x indicator'></i>
-                                        <div class='numbers'>2</div>
+                                </a>
+                            </div>
+                            <!--closed-->
+                            <div class="col-6 col-md-6 centerAuto col-lg">
+                                <a id="closedCard" class="card branchCard closedCard-off">
+                                    <div class="card-body">
+                                        <div class="taskClosed d-flex justify-content-between align-items-center">
+                                            <i id="closedIcon" class="fas fa-check fa-2x indicator"></i>
+                                            <div class="numbers">2</div>
+                                        </div>
+                                        <div class="d-flex cardType">Closed</div>
                                     </div>
-                                    <div class="d-flex cardType">Closed</div>
-                                </div>
-                            </a>
-                        </div>                 
+                                </a>
+                            </div>                 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">
-        <h3 class="text-center mb-3 mb-md-4">CTO's Tasks</h3>
-<!--         <div class='row align-items-center align-self-stretch mb-3'><div id='rangeLabel' class='col-auto pr-0'><label for='dateRangeLabel' class='col-form-label'>Filter range</label></div><div class='col-auto' id='dateRangeDiv'><input type='text' class='daterange' /></div><div id='dateSearch' class='col-auto pl-0'><button class='btn btn-sm' id='dateSearchBtn' type='button'><i class='fas fa-search'></i></button></div></div>
- -->        <div class="table-responsive mb-3">
-            <table class="table table-hover">
-                <thead>
-                    <tr class="bg-primary text-white text-nowrap">
-                        <th scope="col">ID #</th>
-                        <th scope="col">Task</th>
-                        <th scope="col">Assigned To</th>
-                        <th scope="col-sm-0 col-md">Priority</th>
-                        <th scope="col">Due Date</th>
-                        <th scope="col">% Complete</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!--task 1-->
-                    <tr id="task1">
-                        <th scope="row">1</th>
-                        <td>Complete the upgrade for Windows 10</td>
-                        <td>Otto Smith</td>
-                        <td><div class='priority text-danger'>(1) High</div></td>
-                        <td><div class='dueDateContainer'><div class='dueDate'>4/2/2018</div><div class='alert alert-danger dueDateAlert' role='alert'><i class='fas fa-exclamation-circle'></i>5 days late</div></div></td>
-                        <td class="percentComplete">50%</td>
-                    </tr>
-                    <!--task 2-->
-                    <tr id="task2">
-                        <th scope="row">2</th>
-                        <td>Update patches on the server in Virginia</td>
-                        <td>Chris Jones</td>
-                        <td><div class='priority normalPriority'>(2) Normal</div></td>
-                        <td><div class='dueDateContainer'><div class='dueDate'>5/5/2018</div><div class='alert alert-warning dueDateAlert' role='alert'><i class='fas fa-exclamation-triangle'></i>Due in 3 days</div></div></td>
-                        <td class="percentComplete">80%</td>
-                    </tr>
-                    <!--task 3-->
-                    <tr id="task3">
-                        <th scope="row">3</th>
-                        <td>Update patches on the server in Charleston</td>
-                        <td>Billy Johnson</td>
-                        <td><div class='priority normalPriority'>(2) Normal</div></td>
-                        <td><div class='dueDateContainer'><div class='dueDate'>5/8/2018</div><div class='alert alert-warning dueDateAlert' role='alert'><i class='fas fa-exclamation-triangle'></i>Due in 6 days</div></div></td>
-                        <td class="percentComplete">80%</td>
-                    </tr>
-                    <!--task 4-->
-                    <tr id="task4">
-                        <th scope="row">4</th>
-                        <td>Write the quarterly report for the CTO</td>
-                        <td>Larry Bird</td>
-                        <td><div class='priority'>(3) Low</div></td>
-                        <td><div class='dueDateContainer'><div class='dueDate'>5/12/2018</div><div class='alert alert-primary dueDateAlert' role='alert'><i class='fas fa-info-circle'></i>Due in 10 days</div></div></td>
-                        <td class="percentComplete">90%</td>
-                    </tr>
-                    <!--task 5-->
-                    <tr id="task5">
-                        <th scope="row">5</th>
-                        <td>Complete RFI for AWS</td>
-                        <td>Larry Bird</td>
-                        <td><div class='priority'>(2) Normal</div></td>
-                        <td><div class='dueDateContainer'><div class='dueDate'>5/15/2018</div><div class='alert alert-primary dueDateAlert' role='alert'><i class='fas fa-info-circle'></i>Due in 13 days</div></div></td>
-                        <td class="percentComplete">75%</td>
-                    </tr>
-                    <!--task 6-->
-                    <tr id="task6">
-                        <th scope="row">6</th>
-                        <td>Submit annual report</td>
-                        <td>Otto Smith</td>
-                        <td><div class='priority'>(2) Normal</div></td>
-                        <td><div class='dueDateContainer'><div class='dueDate'>2/22/2018</div><div class='alert alert-primary dueDateAlert invisible' role='alert'><i class='fas fa-info-circle invisible'></i></div></div></td>
-                        <td class="percentComplete">100%</td>
-                    </tr>
-                    <!--task 7-->
-                    <tr id="task7">
-                        <th scope="row">7</th>
-                        <td>Complete RFI for Azure</td>
-                        <td>Otto Smith</td>
-                        <td><div class='priority'>(2) Normal</div></td>
-                        <td><div class='dueDateContainer'><div class='dueDate'>3/1/2018</div><div class='alert dueDateAlert invisible' role='alert'><i class='fas fa-info-circle invisible'></i></div></div></td>
-                        <td class="percentComplete">100%</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="container-fluid">
+            <h3 class="text-center mb-3 mb-md-4">CTO's Tasks</h3>
+    <!--         <div class="row align-items-center align-self-stretch mb-3"><div id="rangeLabel" class="col-auto pr-0"><label for="dateRangeLabel" class="col-form-label">Filter range</label></div><div class="col-auto" id="dateRangeDiv"><input type="text" class="daterange" /></div><div id="dateSearch" class="col-auto pl-0"><button class="btn btn-sm" id="dateSearchBtn" type="button"><i class="fas fa-search"></i></button></div></div>
+     -->
+            <div class="table-responsive">
+                <table class="table table-hover">
+                    <thead>
+                        <tr class="bg-primary text-white text-nowrap">
+                            <th scope="col">ID #</th>
+                            <th scope="col">Task</th>
+                            <th scope="col">Assigned To</th>
+                            <th scope="col-sm-0 col-md">Priority</th>
+                            <th scope="col">Due Date</th>
+                            <th scope="col">% Complete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--task 1-->
+                        <tr id="task1">
+                            <th scope="row">1</th>
+                            <td>Complete the upgrade for Windows 10</td>
+                            <td>Otto Smith</td>
+                            <td><div class="priority text-danger">(1) High</div></td>
+                            <td><div class="dueDateContainer"><div class="dueDate">4/2/2018</div><div class="alert alert-danger dueDateAlert" role="alert"><i class="fas fa-exclamation-circle dueDateIndicator"></i>5 days late</div></div></td>
+                            <td class="percentComplete">50%</td>
+                        </tr>
+                        <!--task 2-->
+                        <tr id="task2">
+                            <th scope="row">2</th>
+                            <td>Update patches on the server in Virginia</td>
+                            <td>Chris Jones</td>
+                            <td><div class="priority normalPriority">(2) Normal</div></td>
+                            <td><div class="dueDateContainer"><div class="dueDate">5/5/2018</div><div class="alert alert-warning dueDateAlert" role="alert"><i class="fas fa-exclamation-triangle dueDateIndicator"></i>Due in 3 days</div></div></td>
+                            <td class="percentComplete">80%</td>
+                        </tr>
+                        <!--task 3-->
+                        <tr id="task3">
+                            <th scope="row">3</th>
+                            <td>Update patches on the server in Charleston</td>
+                            <td>Billy Johnson</td>
+                            <td><div class="priority normalPriority">(2) Normal</div></td>
+                            <td><div class="dueDateContainer"><div class="dueDate">5/8/2018</div><div class="alert alert-warning dueDateAlert" role="alert"><i class="fas fa-exclamation-triangle dueDateIndicator"></i>Due in 6 days</div></div></td>
+                            <td class="percentComplete">80%</td>
+                        </tr>
+                        <!--task 4-->
+                        <tr id="task4">
+                            <th scope="row">4</th>
+                            <td>Write the quarterly report for the CTO</td>
+                            <td>Larry Bird</td>
+                            <td><div class="priority">(3) Low</div></td>
+                            <td><div class="dueDateContainer"><div class="dueDate">5/12/2018</div><div class="alert alert-primary dueDateAlert" role="alert"><i class="fas fa-info-circle dueDateIndicator"></i>Due in 10 days</div></div></td>
+                            <td class="percentComplete">90%</td>
+                        </tr>
+                        <!--task 5-->
+                        <tr id="task5">
+                            <th scope="row">5</th>
+                            <td>Complete RFI for AWS</td>
+                            <td>Larry Bird</td>
+                            <td><div class="priority">(2) Normal</div></td>
+                            <td><div class="dueDateContainer"><div class="dueDate">5/15/2018</div><div class="alert alert-primary dueDateAlert" role="alert"><i class="fas fa-info-circle dueDateIndicator"></i>Due in 13 days</div></div></td>
+                            <td class="percentComplete">75%</td>
+                        </tr>
+                        <!--task 6-->
+                        <tr id="task6">
+                            <th scope="row">6</th>
+                            <td>Submit annual report</td>
+                            <td>Otto Smith</td>
+                            <td><div class="priority">(2) Normal</div></td>
+                            <td><div class="dueDateContainer"><div class="dueDate">2/22/2018</div><div class="alert alert-primary dueDateAlert invisible" role="alert"><i class="fas fa-info-circle invisible dueDateIndicator"></i></div></div></td>
+                            <td class="percentComplete">100%</td>
+                        </tr>
+                        <!--task 7-->
+                        <tr id="task7">
+                            <th scope="row">7</th>
+                            <td>Complete RFI for Azure</td>
+                            <td>Otto Smith</td>
+                            <td><div class="priority">(2) Normal</div></td>
+                            <td><div class="dueDateContainer"><div class="dueDate">3/1/2018</div><div class="alert dueDateAlert invisible" role="alert"><i class="fas fa-info-circle invisible dueDateIndicator"></i></div></div></td>
+                            <td class="percentComplete">100%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </body>

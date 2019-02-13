@@ -225,5 +225,85 @@ header {
     margin: 0; }
   .section .jobCol:nth-of-type(1), .section .jobCol:nth-of-type(2) {
     padding-right: 1.5rem; } }
+body {
+  background: #ffffff; }
 
-/*# sourceMappingURL=style.css.map */
+h6 {
+  font-size: 1.125rem; }
+
+nav {
+  background: #000000; }
+
+header {
+  padding-top: 0;
+  background: #000000;
+  /*Card*/ }
+  header #introRow > div:first-of-type {
+    margin-left: 2rem; }
+  header #introRow > div:last-of-type {
+    margin-right: 2rem; }
+  header #introRow #introTitle {
+    color: #ffffff;
+    margin-top: 1.5rem;
+    font-size: 3rem;
+    font-weight: 400; }
+  header .sampleHeader {
+    font-weight: 300;
+    color: #ffffff; }
+  header .moveDownIcon {
+    color: #ffffff;
+    margin-top: 3rem;
+    margin-left: -2rem; }
+  header .sampleOverview {
+    color: #ffffff;
+    background: #1555bc;
+    padding: 1.25rem 1.5rem;
+    border-radius: .5rem; }
+    header .sampleOverview .overview {
+      font-size: 1.5rem;
+      line-height: 3rem; }
+      header .sampleOverview .overview:last-of-type {
+        margin-bottom: 0; }
+  header #projectRow {
+    color: #ffffff;
+    align-items: center;
+    height: 90vh; }
+    header #projectRow > div:first-of-type {
+      margin-left: 2rem; }
+    header #projectRow > div:last-of-type {
+      margin-right: 2rem; }
+    header #projectRow #projectTitle {
+      font-weight: 300;
+      font-size: 3rem;
+      line-height: 4.5rem; }
+  header .sampleOverview {
+    padding: 2rem; }
+    header .sampleOverview .sampleHeader {
+      font-weight: 400; }
+    header .sampleOverview .projectsOverview {
+      font-size: 1.4rem; }
+    header .sampleOverview ul {
+      padding-left: 0; }
+    header .sampleOverview .projectItem {
+      text-align: center;
+      padding: 0;
+      margin-bottom: 1.5rem;
+      list-style-type: none; }
+      header .sampleOverview .projectItem:first-of-type {
+        margin-top: 1.75rem; }
+      header .sampleOverview .projectItem:last-of-type {
+        margin-bottom: 0; }
+      header .sampleOverview .projectItem .projectLink {
+        font-size: 1.25rem;
+        padding-bottom: .75rem; }
+        header .sampleOverview .projectItem .projectLink:hover {
+          text-decoration: none;
+          border-bottom: 2px solid #000000; }
+
+@media (min-width: 992px) {
+  header #projectRow .sampleOverview .projectItem:first-of-type, header #projectRow .sampleOverview .projectItem:last-of-type {
+    margin-top: 1.25rem;
+    margin-bottom: 0;
+    list-style-type: none; } }
+
+/*# sourceMappingURL=subpages.css.map */

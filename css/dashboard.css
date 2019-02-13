@@ -1,0 +1,224 @@
+body {
+  background: #f8fbfc; }
+
+#dashboardIcon {
+  margin-top: 2rem; }
+
+@media (min-width: 992px) {
+  #dashboardIcon {
+    margin-top: 3rem; } }
+.card-deck {
+  flex-direction: row;
+  flex-flow: wrap; }
+  .card-deck a.card {
+    border-radius: .5rem;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 30px; }
+    .card-deck a.card:hover {
+      text-decoration: none;
+      border-color: #007bff;
+      cursor: pointer;
+      color: inherit; }
+      .card-deck a.card:hover h5.card-title {
+        background: #1D214F; }
+    .card-deck a.card:visited {
+      color: inherit; }
+
+@media (min-width: 500px) {
+  .indicator {
+    font-size: 3.125rem; } }
+/*style for branch cards*/
+.branchCard .taskClosed, .branchCard .taskOpen, .branchCard .taskLate, .branchCard .taskComp {
+  font-size: 14px;
+  white-space: nowrap; }
+
+@media (min-width: 992px) {
+  .branchCard .taskClosed, .branchCard .taskOpen, .branchCard .taskLate, .branchCard .taskComp {
+    font-size: 16px;
+    white-space: nowrap; } }
+.branchCard .numbers {
+  font-size: 43px;
+  line-height: 50px;
+  font-weight: 600; }
+
+@media (min-width: 500px) {
+  .branchCard .numbers {
+    font-size: 65px;
+    line-height: 50px;
+    font-weight: 600; } }
+@media (min-width: 992px) {
+  .branchCard .numbers {
+    font-size: 63px;
+    line-height: 60px;
+    font-weight: 600; } }
+.cardType {
+  justify-content: center;
+  white-space: nowrap;
+  margin-top: 15px; }
+
+@media (min-width: 500px) {
+  .cardType {
+    font-size: 1.125rem; } }
+.centerAuto {
+  margin: 0 auto; }
+
+.indicator {
+  color: #ffffff;
+  border-radius: 100%;
+  padding: 13px; }
+
+#openCard {
+  background: #007bff;
+  color: #ffffff; }
+  #openCard #openIcon {
+    color: #007bff;
+    background: #ffffff; }
+
+#openCard.openCard-off {
+  background: #ffffff;
+  color: #212529; }
+  #openCard.openCard-off #openIcon {
+    color: #ffffff;
+    background: #007bff; }
+
+#lateCard {
+  color: #ffffff;
+  background: #dc3545; }
+  #lateCard #lateIcon {
+    color: #dc3545;
+    background: #ffffff;
+    width: 1em; }
+
+#lateCard.lateCard-off {
+  color: inherit;
+  background: #ffffff; }
+  #lateCard.lateCard-off #lateIcon {
+    background: #dc3545;
+    color: #ffffff; }
+
+#thisWeekCard {
+  background: #ffc107; }
+  #thisWeekCard #thisWkIcon {
+    color: #ffc107;
+    background: #ffffff;
+    width: 1em; }
+
+#thisWeekCard.thisWkCard-off {
+  background: #ffffff; }
+  #thisWeekCard.thisWkCard-off #thisWkIcon {
+    color: #ffffff;
+    background: #ffc107; }
+
+#nextWeekCard {
+  color: #ffffff;
+  background: #6c757d; }
+  #nextWeekCard #nextWkIcon {
+    color: #6c757d;
+    background: #ffffff;
+    width: 1em; }
+
+#nextWeekCard.nextWkCard-off {
+  color: #212529;
+  background: #ffffff; }
+  #nextWeekCard.nextWkCard-off #nextWkIcon {
+    color: #ffffff;
+    background: #6c757d; }
+
+#closedCard {
+  color: #ffffff;
+  background: #28a745; }
+  #closedCard #closedIcon {
+    color: #28a745;
+    background: #ffffff; }
+
+#closedCard.closedCard-off {
+  color: #212529;
+  background: #ffffff; }
+  #closedCard.closedCard-off #closedIcon {
+    color: #ffffff;
+    background: #28a745; }
+
+.cardContainer {
+  display: flex; }
+
+/* filter */
+input.daterange {
+  font-family: "Segoe UI","Segoe",Tahoma,Helvetica,Arial,sans-serif;
+  min-width: 200px; }
+
+.daterangepicker_input > svg.fa-calendar {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  color: #444444; }
+
+button#dateSearchBtn {
+  min-width: 0;
+  background: #1D214F;
+  color: #ffffff; }
+
+.daterangepicker {
+  color: #444444; }
+
+.daterangepicker td.active, .daterangepicker td.active:hover {
+  background-color: #007bff; }
+
+.ranges li.active, .ranges li:hover {
+  background: #007bff;
+  border-color: #007bff; }
+
+/*TABLE STARTS*/
+.table th, .table td {
+  vertical-align: middle; }
+
+tr:nth-child(odd) {
+  background: #ffffff; }
+tr:nth-child(even) {
+  background: #f2f2f2; }
+tr:hover {
+  cursor: pointer; }
+
+tr
+.priority {
+  white-space: nowrap; }
+
+.normalPriority {
+  color: #e64c00; }
+
+.dueDateContainer {
+  max-width: 175px; }
+
+@media (min-width: 768px) {
+  .dueDateContainer {
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    width: 100%;
+    max-width: 325px; } }
+.dueDate {
+  flex: 1; }
+
+.dueDateAlert {
+  margin: 0.5rem 0;
+  white-space: nowrap; }
+
+@media (min-width: 768px) {
+  .dueDateAlert {
+    flex: 2;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center; } }
+.dueDateAlert svg {
+  margin-right: 1rem; }
+
+.percentCompleteContainer {
+  background-color: #CCD4DC;
+  width: 140px;
+  display: inline-block; }
+
+.percentColorBar {
+  background-color: #0094ff; }
+
+/*# sourceMappingURL=dashboard.css.map */

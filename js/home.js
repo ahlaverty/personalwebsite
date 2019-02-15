@@ -18,7 +18,6 @@ $().ready(function(){
 		}
 	});
 
-
 		
 	function hideNav(){
 		$(".nav-link").click(function(){

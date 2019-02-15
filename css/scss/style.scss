@@ -36,6 +36,7 @@ a{
 	.navbar-toggler-icon{
 		width:auto;
 		height:auto;
+		margin-left: -1rem;
 	}
 }
 
@@ -55,6 +56,7 @@ nav.navbar{
 
 	#navbarNav{
 		background: $accent-color;
+		z-index: 1;
 	}
 
 	.navbar-nav{

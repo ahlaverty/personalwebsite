@@ -2,11 +2,11 @@
 @import "style";
 @import "subpages";
 
-
 #metalsmithContainer{
-	// height: 90vh;
-	display: flex;
-	align-items: center;
+	background: $black;
+	padding-top: 1rem;
+	padding-bottom: 3rem;
+	height: 90vh;
 
 	#metalsmithCarousel{
 		color: $white;
@@ -14,21 +14,22 @@
 		line-height: 2.5rem;
 
 		#metalsmithRow{
-
-			> div:first-of-type{
-				margin-left: 2rem;
-			}
-			
-			> div:last-of-type{
-				margin-right: 2rem;
-			}
-
+ 			
 			.metalOverview{
-				margin-top: 1rem;
+				//margin-top: 1rem;
+			}
+
+			header{
+				height:auto;
 			}
 
 			#jewelryOverview{
-				// height: 80vh;
+				color: $white;
+		        background: $accent-color;
+		        padding: 1.25rem 1.5rem;
+		        border-radius: .5rem;
+
+				margin: 1rem 0 0 0;
 
 				ul{
 					margin-bottom: 0;
@@ -46,9 +47,41 @@
 					}
 				}
 
+				#jewelryCarousel{
+				}
+
 				img{
 					height: 100%;
-				}				
+				}	
+
+			}
+		}
+	}
+}
+
+@media(min-width: 768px){
+	#metalsmithContainer{
+		padding-top: 2rem;
+
+		#metalsmithCarousel{
+			#metalsmithRow{
+
+				> div:first-of-type{
+					margin-left: 2rem;
+				}
+
+				> div:last-of-type{
+					margin-right: 2rem;
+				}
+
+				.metalOverview{
+					margin-top: 1rem;
+				}
+				
+				#jewelryOverview{
+
+					margin: 0 -15px 0 -15px;
+				}
 			}
 		}
 	}

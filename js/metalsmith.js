@@ -2,14 +2,34 @@ $().ready(function(){
 
 	$("#ringsLink").click(function(){
 		showCarousel(".rings");
+
+		if($(".carousel-item.rings").length === 1){
+			$("a[^='.carousel-control-']").hide();
+		}
+		else{
+			$("a[^='.carousel-control-']").show();
+		}
 	});
 
 	$("#earringsLink").click(function(){
 		showCarousel(".earrings");
+		if($(".carousel-item.earrings").length === 1){
+			$("a[^='.carousel-control-']").hide();
+		}
+		else{
+			$("a[^='.carousel-control-']").show();
+		}
 	});
 
 	$("#pendantsLink").click(function(){
 		showCarousel(".pendants");
+
+		if($(".carousel-item.pendants").length === 1){
+			$("a[^='.carousel-control-']").hide();
+		}
+		else{
+			$("a[^='.carousel-control-']").show();
+		}
 	});
 
 

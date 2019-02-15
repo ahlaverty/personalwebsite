@@ -25,7 +25,8 @@ a {
     outline: none; }
   .navbar-toggler .navbar-toggler-icon {
     width: auto;
-    height: auto; }
+    height: auto;
+    margin-left: -1rem; }
 
 .navbar-collapse {
   margin-left: -1rem;
@@ -40,7 +41,8 @@ nav.navbar {
   font-weight: 300;
   /*top link*/ }
   nav.navbar #navbarNav {
-    background: #1555bc; }
+    background: #1555bc;
+    z-index: 1; }
   nav.navbar .navbar-nav {
     margin-top: 0; }
   nav.navbar .nav-item {

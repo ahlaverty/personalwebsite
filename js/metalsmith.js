@@ -4,7 +4,7 @@ $().ready(function(){
 		showCarousel(".rings");
 
 		if($(".carousel-item.rings").length === 1){
-			$("a[^='.carousel-control-']").hide();
+			$("a[class^='.carousel-control-']").hide();
 		}
 		else{
 			$("a[^='.carousel-control-']").show();
@@ -14,10 +14,10 @@ $().ready(function(){
 	$("#earringsLink").click(function(){
 		showCarousel(".earrings");
 		if($(".carousel-item.earrings").length === 1){
-			$("a[^='.carousel-control-']").hide();
+			$("a[class^='.carousel-control-']").hide();
 		}
 		else{
-			$("a[^='.carousel-control-']").show();
+			$("a[class^='.carousel-control-']").show();
 		}
 	});
 
@@ -25,10 +25,10 @@ $().ready(function(){
 		showCarousel(".pendants");
 
 		if($(".carousel-item.pendants").length === 1){
-			$("a[^='.carousel-control-']").hide();
+			$("a[class^='.carousel-control-']").hide();
 		}
 		else{
-			$("a[^='.carousel-control-']").show();
+			$("a[class^='.carousel-control-']").show();
 		}
 	});
 

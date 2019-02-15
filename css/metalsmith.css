@@ -26,7 +26,7 @@ a {
   .navbar-toggler .navbar-toggler-icon {
     width: auto;
     height: auto;
-    margin-left: -1rem; }
+    margin-left: -1.7rem; }
 
 .navbar-collapse {
   margin-left: -1rem;
@@ -316,8 +316,6 @@ header {
     color: #ffffff;
     font-size: 1.6rem;
     line-height: 2.5rem; }
-    #metalsmithContainer #metalsmithCarousel #metalsmithRow header {
-      height: auto; }
     #metalsmithContainer #metalsmithCarousel #metalsmithRow #jewelryOverview {
       color: #ffffff;
       background: #1555bc;
@@ -325,13 +323,21 @@ header {
       border-radius: .5rem;
       margin: 1rem 0 0 0; }
       #metalsmithContainer #metalsmithCarousel #metalsmithRow #jewelryOverview ul {
-        margin-bottom: 0; }
+        list-style-type: none;
+        margin-bottom: 0;
+        padding-left: 0; }
       #metalsmithContainer #metalsmithCarousel #metalsmithRow #jewelryOverview .projectItem {
-        text-align: left; }
+        margin-bottom: 1rem;
+        text-align: left;
+        border-bottom: 2px solid transparent; }
         #metalsmithContainer #metalsmithCarousel #metalsmithRow #jewelryOverview .projectItem:first-of-type {
           margin-top: 0; }
         #metalsmithContainer #metalsmithCarousel #metalsmithRow #jewelryOverview .projectItem:last-of-type {
           margin-bottom: 0; }
+        #metalsmithContainer #metalsmithCarousel #metalsmithRow #jewelryOverview .projectItem a:hover {
+          padding-bottom: .5rem;
+          border-bottom: 2px solid #000000;
+          text-decoration: none; }
       #metalsmithContainer #metalsmithCarousel #metalsmithRow #jewelryOverview img {
         height: 100%; }
 
